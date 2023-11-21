@@ -6,28 +6,37 @@ import {AiFillLinkedin} from "react-icons/ai"
 
 
 function App() {
+  
   return (
     <div className="App">
+      
       <header className='header'>
-        <h4>anitayala</h4>
+    
+        <h4 className='name'>anitayala</h4>
+        <div  className='icon.profile'>
         <div className='icons'>
         <AiFillGithub/>
         <AiFillTwitterSquare/>
         <AiFillLinkedin/>
+        <div className='img-profile-container'>
+        <img   className='img-profile' src={process.env.PUBLIC_URL + '/assets/WebCapture-profile.png'} alt="Web Capture"/>
+       </div>
+       </div>
     </div>
 
       </header>
+      
       <main>
-        <div className='profile'>
-        <img className='img-profile' src={process.env.PUBLIC_URL + '/assets/WebCapture-profile.png'} alt="Web Capture"/>
-          <div>
-          <h1 className='heading1'>Nice to meet you! I'm <span className='span'> Anita Yala.</span></h1>
-          <p className='intro'>I'm a front-end developer passionate about building accessible web applications that users love.</p>
+      <div className='profile'>
+          <div className='profile-head'>
+          <h1 style={{color:'white',}} className='heading1'>Nice to meet you!  <span className='span' style={{textDecoration:'underline', textDecorationColor:'#4EE1A0', color:'white',}}>I'm Anita Yala.</span></h1><br/>
+          <p className='intro'>Based in Kenya, I'm a front-end developer<br/>
+           passionate about building accessible web applications that users love.</p>
+         </div> 
           
           </div>
-          </div>
           <a className='contact1' href='CONTACT ME'>CONTACT ME</a>
-          <hr/>
+          <hr className='horizontal-line'/>
           
           <section className='skills'>
 
@@ -63,11 +72,45 @@ function App() {
             <div className='projects-sect' style={{display:'flex',alignItems:'center',justifyContent:'space-between'}}> 
               <h3 className='projects-head'>Projects</h3>
 
-           <a href='Contact me'>Contact me</a>
+           <a href='Contact me' className='contact2'>Contact me</a>
             </div>
             
 
             <section className='grid'>
+
+            <div className='project-item'>
+            <img className='img' src={process.env.PUBLIC_URL + '/assets/WebCapture-dictionary.png'} alt="Web Capture"/>
+            <div className='project-details'>
+                  <h3 className='project-title'>Web Dictionary</h3>
+                  <p className='project-tag'>
+                  
+                  <span>JAVASCRIPT</span><br/>
+                  <span>CSS</span>
+                </p>
+                <div className='project-link'>
+                  <a href=' https://unrivaled-vacherin-6f58d6.netlify.app/ '>view project</a><br/>
+                  <a href='https://github.com/Anise918/Dictionary-Api.git '>view code</a>
+                  </div>
+                  </div>
+                  </div>
+
+                  <div className='project-item'>
+            <img className='img' src={process.env.PUBLIC_URL + '/assets/country.png.png'} alt="Web Capture"/>
+            <div className='project-details'>
+                  <h3 className='project-title'>Countries Api</h3>
+                  <p className='project-tag'>
+                  
+                  <span>REACT</span><br/>
+                  <span>TAILWIND</span>
+                </p>
+                <div className='project-link'>
+                  <a href=' https://classy-liger-98050c.netlify.app/ '>view project</a><br/>
+                  <a href='https://github.com/Anise918/Countries-Api-project.git '>view code</a>
+                  </div>
+                  </div>
+                  </div>
+
+
               <div className='project-item'>
               <img className='img' src={process.env.PUBLIC_URL + '/assets/WebCapture-todo.png'} alt="Web Capture"/>
               <div className='project-details'>
@@ -75,8 +118,7 @@ function App() {
                   <p className='project-tag'>
                   <span>REACT</span><br/>
                   <span>JAVASCRIPT</span><br/>
-                  
-                  
+            
                 </p>
                 <div className='project-link'>
                   <a href='view project'>view project</a><br/>
@@ -101,14 +143,15 @@ function App() {
                   </div>
                   </div>
                   </div>
+
                   <div className='project-item'>
                   <img className='img' src={process.env.PUBLIC_URL + '/assets/WebCapture-fylo.png'} alt="Web Capture"/>
                   <div className='project-details'>
                   <h3 className='project-title'>Fylo Dark Theme Landing Page</h3>
                   <p className='project-tag'>
                   
-                  <span>HTML</span><br/>
-                  <span>CSS</span>
+                  <span>HTML</span>
+                  <span>CSS</span><br/>
                   </p>
                   <div className='project-link'>
                   <a href='view project'>view project</a><br/>
@@ -141,7 +184,7 @@ function App() {
             <p className='contact-paragraph'>I would like to hear about your project and how i could help.<br/>
                Please fill in the form, and i'll get back to you as soon as possible</p><br/>
                </div>
-          
+          <div style={{display:'flex',flexDirection:'column'}} className='form-btn'>
           <form className='form-area'>
             <input className='form' type='text' placeholder='Name'/><br/>
             <input className='form' type='text' placeholder='email'/><br/>
@@ -149,7 +192,8 @@ function App() {
             </form>
             <div className='button'>
               <p className='btn-text'>SEND MESSAGE</p>
-          <button className='btn' placeholder='send message'></button>
+          <button className='btn' style={{width:'144px', height:'2px',background:'#4EE1A0'}} placeholder='send message'></button>
+              </div>
               </div>
         </div>
           <hr/>
