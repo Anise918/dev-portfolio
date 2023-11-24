@@ -7,16 +7,22 @@
     background: var(--black, #151515);
     font-family: 'Space Grotesk', sans-serif;
     box-sizing: border-box;
-    width: 100%;
+    
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: 28px; 
   }
   .App{
-    max-width:100%;
+    width:80%;
     overflow:hidden;
+    margin-left:auto;
+    margin-right:auto;
   }
+
+ 
+  
+
 
 .h1{
   color: #FFF;
@@ -188,11 +194,11 @@ p{
   .grid{
     grid-template-columns: repeat(1 (0,1fr));
   }
-  .img{
+  /*.img{
     width: 345px;
     height: 253px;
     flex-shrink: 0;
-  }
+  }*/
   
   .project-title{
     color: var(--white, #FFF);
@@ -318,13 +324,11 @@ letter-spacing: 2.286px;
     line-height: 40px; 
     letter-spacing: -1.136px;
   }
-  .image-profile{
-width: 174.207px;
-height: 242px;
-flex-shrink: 0;
-
-  }
-
+  
+  /*.img-profile{
+    width:300px;
+    height:auto;
+  }*/
   .projects-head{
     color: var(--white, #FFF);
     font-family: Space Grotesk;
@@ -371,12 +375,12 @@ flex-shrink: 0;
    
 
   }
-  .img{
+ /* .img{
  width:345px;
 height: 253px;
 flex-shrink: 0;
 
-  }
+  }*/
   .icon-profile{
     
   }
@@ -385,7 +389,7 @@ flex-shrink: 0;
     
     /*align-items: center;*/
   
-    justify-content: space-around;
+    justify-content:space-evenly;
     color: var(--white, #FFF);
     
     font-family: inherit;
@@ -394,6 +398,9 @@ flex-shrink: 0;
     font-weight: 700;
     line-height: 32px; 
     letter-spacing: -0.444px;
+  }
+  .intro{
+    width:75%;
   }
   .icons{
     width: 192.492px;
@@ -413,19 +420,21 @@ flex-shrink: 0;
   
  }
 
-  .img-profile{
+ .img-profile{
 /*width: 349.854px;
 height: 486px;*/
-width:300px;
-height:400px;
+width:100%;
+height:auto;
+ 
 
   }
+  
   
 
   .heading1{
     color: var(--white, #FFF);
 font-family: Space Grotesk;
-font-size: 3rem;
+font-size: 2rem;
 font-style: normal;
 font-weight: 700;
 line-height: 72px; 
@@ -455,6 +464,7 @@ letter-spacing: 2.286px;
   }
   .Contacts{
     display:flex;
+    justify:space-around;
     
 
   }
@@ -538,13 +548,94 @@ flex-shrink: 0;
   .grid{
     grid-template-columns: repeat(2, minmax(0,1fr));
   }
-  .img{
+
+  .project-item {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+  }
+
+  .project-item:hover .hover-overlay {
+    opacity: 1;
+  }
+
+  .hover-overlay a {
+    color: #fff;
+    text-decoration: underline #4EE1A0 3px;
+
+    margin: 10px;
+    padding: 10px 20px;
+    
+    
+  }
+
+
+
+  /*.img{
  width: 540px;
 height: 400px;
 flex-shrink: 0;
 opacity: 0.75;
 background: #000;
+  }*/
+
+
+  /*.project-item {
+    position: relative;
+    margin-bottom:20px;
   }
+  
+  .image-container {
+    position: relative;
+    overflow:hidden;
+  }
+  
+  .hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-container:hover .hover-overlay {
+    opacity: 1;
+  }
+
+  .hover-overlay a {
+    text-decoration: none;
+    color: white;
+    margin: 5px 0; 
+  }
+  
+  .hover-overlay a:hover {
+    text-decoration: underline;
+    color: green;
+  }*/
+
+
+
   .header{
 display:flex;
 justify-content:space-evenly;
@@ -573,6 +664,7 @@ padding:20px;
     margin:0;
     
   }
+  
 /*.profile-content{
 padding-right: 0;
   }*/
@@ -585,11 +677,16 @@ padding-right: 0;
 
   }
   .img-profile{
-/*width: 444.876px;
-height: 400px;*/
-
+/*width:350px;
+height: auto;
+padding:50px;
 flex-shrink:0;
-padding:0;
+background:dark-gray;*/
+width:350px;
+height:auto;
+
+
+padding-top:20px;
 
   }
   .icons{
@@ -604,7 +701,7 @@ padding:0;
   color: var(--white, #FFF);
 font-feature-settings: 'clig' off, 'liga' off;
 font-family: 'inherit';
-font-size: 3rem;
+font-size: 3.5rem;
 font-style: normal;
 font-weight: 600;
 line-height: 88px; 
@@ -669,7 +766,7 @@ line-height: 28px;
     display: flex;
     flex-direction:row;
     
-    justify-content: space-around;
+    justify-content: space-between;
   }
  
   .btn-text{

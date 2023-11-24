@@ -19,7 +19,9 @@ function App() {
         <AiFillTwitterSquare/>
         <AiFillLinkedin/>
         <div className='img-profile-container'>
-        <img   className='img-profile' src={process.env.PUBLIC_URL + '/assets/WebCapture-profile.png'} alt="Web Capture"/>
+        <img style={{width:'300px' , height:'auto'}} className='img-profile' src={process.env.PUBLIC_URL + '/assets/profilePicture.png'} alt="Web Capture"/>
+
+       
        </div>
        </div>
     </div>
@@ -28,8 +30,13 @@ function App() {
       
       <main>
       <div className='profile'>
-          <div className='profile-head'>
-          <h1 style={{color:'white',}} className='heading1'>Nice to meet you!  <span className='span' style={{textDecoration:'underline', textDecorationColor:'#4EE1A0', color:'white',}}>I'm Anita Yala.</span></h1><br/>
+          <div  className='profile-head'>
+          <h1 style={{color:'white',}} className='heading1'>Nice to meet you! <br/>
+
+           <span className='span' 
+           style={{textDecoration:'underline', 
+           textDecorationColor:'#4EE1A0', color:'white',}}>
+            I'm Anita Yala.</span></h1>
           <p className='intro'>Based in Kenya, I'm a front-end developer<br/>
            passionate about building accessible web applications that users love.</p>
          </div> 
@@ -42,28 +49,28 @@ function App() {
 
               <div className='skill-item'>
               <h2 className='title'>HTML</h2>
-              <p className='skill-year'>4 years of experience</p>
+              <p className='skill-year'>1 year of experience</p>
               </div>
               <div className='skill-item'>
               <h2 className='title'>CSS</h2>
-              <p className='skill-year'>4 years of experience</p>
+              <p className='skill-year'>1 year of experience</p>
               </div>
              <div className='skill-item'>
              <h2 className='title'>JavaScript</h2>
-              <p className='skill-year'>4 Years of experience</p>
+              <p className='skill-year'>1 Year of experience</p>
              </div>
              <div className='skill-item'>
              <h2 className='title'>React</h2>
-              <p className='skill-year'>4 years of experience</p>
+              <p className='skill-year'>1 year of experience</p>
             
              </div><div className='skill-item'>
              <h2 className='title'>Accesibility</h2>
-              <p className='skill-year'>4 years of experience</p>
+              <p className='skill-year'>1 year of experience</p>
             
              </div>
              <div className='skill-item'>
              <h2 className='title'>Tailwind</h2>
-              <p className='skill-year'>4 years of experience</p>
+              <p className='skill-year'>1 year of experience</p>
             
              </div>
 
@@ -88,14 +95,18 @@ function App() {
                   <span>CSS</span>
                 </p>
                 <div className='project-link'>
+                  <div className='hover-overlay'>
                   <a href=' https://unrivaled-vacherin-6f58d6.netlify.app/ '>view project</a><br/>
                   <a href='https://github.com/Anise918/Dictionary-Api.git '>view code</a>
                   </div>
                   </div>
                   </div>
+                  </div>
 
                   <div className='project-item'>
-            <img className='img' src={process.env.PUBLIC_URL + '/assets/country.png.png'} alt="Web Capture"/>
+                  <img className='img' src='/assets/WebcaptureCountries.png' alt='Country Capture' />
+
+                  
             <div className='project-details'>
                   <h3 className='project-title'>Countries Api</h3>
                   <p className='project-tag'>
@@ -104,32 +115,60 @@ function App() {
                   <span>TAILWIND</span>
                 </p>
                 <div className='project-link'>
+                  <div className='hover-overlay'>
                   <a href=' https://classy-liger-98050c.netlify.app/ '>view project</a><br/>
                   <a href='https://github.com/Anise918/Countries-Api-project.git '>view code</a>
                   </div>
                   </div>
                   </div>
+                  </div>
 
 
-              <div className='project-item'>
-              <img className='img' src={process.env.PUBLIC_URL + '/assets/WebCapture-todo.png'} alt="Web Capture"/>
+              <div  className='project-item'>
+              <img  className='img' src={process.env.PUBLIC_URL + '/assets/WebAudiophiles.png'} alt="Web Capture"/>
               <div className='project-details'>
-                  <h3 className='project-title'>TODO-APP</h3>
+                  <h3 className='project-title'>E-commerce Website</h3>
                   <p className='project-tag'>
                   <span>REACT</span><br/>
                   <span>JAVASCRIPT</span><br/>
             
                 </p>
                 <div className='project-link'>
-                  <a href='view project'>view project</a><br/>
-                  <a href='https://github.com/Anise918/Todo-app.git'>view code</a>
+                  <div className='hover-overlay'>
+                  <a href=' https://peaceful-llama-7b8dcf.netlify.app/ '>view project</a><br/>
+                  <a href=' https://github.com/Anise918/E-commerce-web-audiophiles.git '>view code</a>
+                  </div>
                   </div>
 
               </div>
 
             </div>
+
+            <div  className='project-item'>
+              <img  className='img' src={process.env.PUBLIC_URL + '/assets/devPort.png'} alt="Web Capture"/>
+              <div className='project-details'>
+                  <h3 className='project-title'>Design Portfolio</h3>
+                  <p className='project-tag'>
+                  <span>REACT</span><br/>
+                  <span>JAVASCRIPT</span><br/>
+            
+                </p>
+                <div className='project-link'>
+                  <div className='hover-overlay'>
+                  <a href=' https://peaceful-llama-7b8dcf.netlify.app/ '>view project</a><br/>
+                  <a href=' https://github.com/Anise918/E-commerce-web-audiophiles.git '>view code</a>
+                  </div>
+                  </div>
+
+              </div>
+
+            </div>
+
+
+
+
             <div className='project-item'>
-            <img className='img' src={process.env.PUBLIC_URL + '/assets/WebCapture-game.png'} alt="Web Capture"/>
+            <img className='img' src={process.env.PUBLIC_URL + '/assets/Game.png'} alt="Web Capture"/>
             <div className='project-details'>
                   <h3 className='project-title'>Whack-A-Mole Game</h3>
                   <p className='project-tag'>
@@ -137,13 +176,17 @@ function App() {
                   <span>JAVASCRIPT</span><br/>
                   <span>CSS</span>
                 </p>
-                <div className='project-link'>
-                  <a href='file:///C:/Users/ANITA/Downloads/whack-a-mole-starter-files/whack-a-mole-starter-files-main/index.html'>view project</a><br/>
-                  <a href='https://github.com/Anise918/Anise.github..git'>view code</a>
+                
+                  <div className='hover-overlay'>
+                    <div className='project-link'>
+                  <a href=' https://darling-dieffenbachia-4559f0.netlify.app/'>view project</a><br/>
+                  <a href='https://github.com/Anise918/Whack-a-mole.git'>view code</a>
+                  </div>
                   </div>
                   </div>
                   </div>
 
+                  
                   <div className='project-item'>
                   <img className='img' src={process.env.PUBLIC_URL + '/assets/WebCapture-fylo.png'} alt="Web Capture"/>
                   <div className='project-details'>
@@ -154,26 +197,19 @@ function App() {
                   <span>CSS</span><br/>
                   </p>
                   <div className='project-link'>
+                    <div className='hover-overlay'>
                   <a href='view project'>view project</a><br/>
                   <a href='view code'>view code</a>
                   </div>
                   </div>
                   </div>
-                  <div className='project-item'>
-                  <img className='img' src={process.env.PUBLIC_URL + '/assets/WebCapture-timer.png'} alt="Web Capture"/>
-                  <div className='project-details'>
-                  <h3 className='project-title'>Count-Down Timer</h3>
-                  <p className='project-tag'>
+                  </div>
+
+  
+          
+    
+
                   
-                  <span>JAVASCRIPT</span><br/>
-                  <span>CSS</span>
-                </p>
-                <div className='project-link'>
-                  <a href='file:///C:/Users/ANITA/Downloads/Count%20Down%20Timer%20[Starter%20Files]/0b3ec3551fcfac5c90742954b398b555-3720e275ae28df5433eaf0b3c7dcb037b040ebd8/index.html'>view project</a><br/>
-                  <a href='https://github.com/Anise918/Anise.github.io.git'>view code</a>
-                  </div>
-                  </div>
-                  </div>
             </section>
       
           <div className='Contacts' >
