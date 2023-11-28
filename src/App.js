@@ -19,7 +19,7 @@ function App() {
         <AiFillTwitterSquare/>
         <AiFillLinkedin/>
         <div className='img-profile-container'>
-        <img style={{width:'300px' , height:'auto'}} className='img-profile' src={process.env.PUBLIC_URL + '/assets/profilePicture.png'} alt="Web Capture"/>
+        <img style={{width:'250px', }} className='img-profile' src={process.env.PUBLIC_URL + '/assets/profilePicture.png'} alt="Web Capture"/>
 
        
        </div>
@@ -155,8 +155,8 @@ function App() {
                 </p>
                 <div className='project-link'>
                   <div className='hover-overlay'>
-                  <a href=' https://peaceful-llama-7b8dcf.netlify.app/ '>view project</a><br/>
-                  <a href=' https://github.com/Anise918/E-commerce-web-audiophiles.git '>view code</a>
+                  <a href=' https://remarkable-mousse-692c1b.netlify.app/ '>view project</a><br/>
+                  <a href=' https://github.com/Anise918/dev-portfolio.git '>view code</a>
                   </div>
                   </div>
 
@@ -211,10 +211,11 @@ function App() {
 
                   
             </section>
-      
+       
+           <section  style={{backgroundColor:'#242424', width:'100%'}}>
           <div className='Contacts' >
           
-            <div className='contact-area'>
+            <div style={{marginTop:'30px'}} className='contact-area'>
         
             <h2 className='Contact-head'>Contact</h2>
             <p className='contact-paragraph'>I would like to hear about your project and how i could help.<br/>
@@ -242,6 +243,7 @@ function App() {
     </div>
 
           </footer>
+          </section>
          
       </main>
        
