@@ -19,7 +19,7 @@ function App() {
         <AiFillTwitterSquare/>
         <AiFillLinkedin/>
         <div className='img-profile-container'>
-        <img style={{width:'250px', }} className='img-profile' src={process.env.PUBLIC_URL + '/assets/profilePicture.png'} alt="Web Capture"/>
+        <img style={{width:'263px', justifyItems:'center' ,}} className='img-profile' src={process.env.PUBLIC_URL + '/assets/profilePicture.png'} alt="Web Capture"/>
 
        
        </div>
@@ -42,7 +42,8 @@ function App() {
          </div> 
           
           </div>
-          <a className='contact1' href='CONTACT ME'>CONTACT ME</a>
+          <a 
+          className='contact1' href='CONTACT ME'>CONTACT ME</a>
           <hr className='horizontal-line'/>
           
           <section className='skills'>
