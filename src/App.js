@@ -15,9 +15,23 @@ function App() {
         <h4 className='name'>anitayala</h4>
         <div  className='icon.profile'>
         <div className='icons'>
-        <AiFillGithub/>
-        <AiFillTwitterSquare/>
-        <AiFillLinkedin/>
+
+
+        <a href=" https://github.com/Anise918  ">
+  <AiFillGithub/>
+</a>
+
+
+  <AiFillTwitterSquare/>
+
+
+<a href=" https://www.linkedin.com/in/anita-yala-293505205/ ">
+  <AiFillLinkedin/>
+</a>
+
+
+
+        
         <div className='img-profile-container'>
         <img style={{width:'263px', justifyItems:'center' ,}} className='img-profile' src={process.env.PUBLIC_URL + '/assets/profilePicture.png'} alt="Web Capture"/>
 
@@ -238,9 +252,22 @@ function App() {
           <footer className='footer'>
             <h4>anitayala</h4>
             <div className='icons'>
-        <AiFillGithub/>
-        <AiFillTwitterSquare/>
-        <AiFillLinkedin/>
+       
+        <a href=" https://github.com/Anise918  ">
+  <AiFillGithub/>
+</a>
+
+
+  <AiFillTwitterSquare/>
+
+
+<a href=" https://www.linkedin.com/in/anita-yala-293505205/ ">
+  <AiFillLinkedin/>
+</a>
+
+
+
+        
     </div>
 
           </footer>
