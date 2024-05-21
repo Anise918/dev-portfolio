@@ -202,23 +202,27 @@ function App() {
                   </div>
 
                   
-                  <div className='project-item'>
-                  <img className='img' src={process.env.PUBLIC_URL + '/assets/WebCapture-fylo.png'} alt="Web Capture"/>
-                  <div className='project-details'>
-                  <h3 className='project-title'>Fylo Dark Theme Landing Page</h3>
+                  <div  className='project-item'>
+              <img  className='img' src={process.env.PUBLIC_URL + '/assets/Mmenu.png.png'} alt="Web Capture"/>
+              <div className='project-details'>
+                  <h3 className='project-title'>Menu App</h3>
                   <p className='project-tag'>
-                  
-                  <span>HTML</span>
-                  <span>CSS</span><br/>
-                  </p>
-                  <div className='project-link'>
-                    <div className='hover-overlay'>
-                  <a href='view project'>view project</a><br/>
-                  <a href='view code'>view code</a>
+                  <span>REACT</span><br/>
+                  <span>JAVASCRIPT</span>
+            
+                </p>
+                <div className='project-link'>
+                  <div className='hover-overlay'>
+                  <a href=' https://profound-arithmetic-6cc54a.netlify.app/ '>view project</a><br/>
+                  <a href=' https://github.com/Anise918/Menu-Restaurant.git '>view code</a>
                   </div>
                   </div>
-                  </div>
-                  </div>
+
+              </div>
+
+            </div>
+
+
 
   
           
