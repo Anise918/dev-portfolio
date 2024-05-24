@@ -64,28 +64,28 @@ function App() {
 
               <div className='skill-item'>
               <h2 className='title'>HTML</h2>
-              <p className='skill-year'>1 year of experience</p>
+              <p className='skill-year'>2 years of experience</p>
               </div>
               <div className='skill-item'>
-              <h2 className='title'>CSS</h2>
-              <p className='skill-year'>1 year of experience</p>
+              <h2 className='title'>UI/UX</h2>
+              <p className='skill-year'>2 years of experience</p>
               </div>
              <div className='skill-item'>
              <h2 className='title'>JavaScript</h2>
-              <p className='skill-year'>1 Year of experience</p>
+              <p className='skill-year'>2 Years of experience</p>
              </div>
              <div className='skill-item'>
              <h2 className='title'>React</h2>
-              <p className='skill-year'>1 year of experience</p>
+              <p className='skill-year'>2 years of experience</p>
             
              </div><div className='skill-item'>
              <h2 className='title'>Accesibility</h2>
-              <p className='skill-year'>1 year of experience</p>
+              <p className='skill-year'>2 years of experience</p>
             
              </div>
              <div className='skill-item'>
              <h2 className='title'>Tailwind</h2>
-              <p className='skill-year'>1 year of experience</p>
+              <p className='skill-year'>2 years of experience</p>
             
              </div>
 
